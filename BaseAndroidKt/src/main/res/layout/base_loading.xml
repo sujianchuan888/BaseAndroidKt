@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_loading_bg"
+    android:gravity="center">
+
+    <!-- bg_toast -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.sjc.baseAndroid.weight.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="@dimen/qb_px_80"
+            android:layout_height="@dimen/qb_px_80"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            wheel:matProg_barColor="#87CEFA"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/qb_px_10"
+            android:text="加载中..."
+            android:textColor="#666666"
+            android:textSize="@dimen/qb_px_26"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

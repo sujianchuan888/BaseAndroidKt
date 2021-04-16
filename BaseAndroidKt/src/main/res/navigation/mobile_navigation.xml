@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_follow">
+
+    <fragment
+        android:id="@+id/navigation_follow"
+        android:name="com.example.myapplication.ui.main.fragment.FollowFragment"
+        android:label="@string/title_index"
+        tools:layout="@layout/fragment_follow" />
+
+    <fragment
+        android:id="@+id/navigation_publish"
+        android:name="com.example.myapplication.ui.main.fragment.FollowFragment2"
+        android:label="@string/title_publish"
+        tools:layout="@layout/fragment_follow2" />
+
+    <fragment
+        android:id="@+id/navigation_chart"
+        android:name="com.example.myapplication.ui.main.fragment.FollowFragment3"
+        android:label="@string/title_chart"
+        tools:layout="@layout/fragment_follow3" />
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.example.myapplication.ui.main.fragment.FollowFragment4"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_follow4" />
+</navigation>

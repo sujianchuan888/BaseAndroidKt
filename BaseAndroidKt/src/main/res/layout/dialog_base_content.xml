@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/bg_white_round"
+    android:id="@+id/ll_root"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.sjc.baseAndroid.weight.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/qb_px_50"
+                android:text="温馨提示"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_17" />
+
+            <com.sjc.baseAndroid.weight.MediumTextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/qb_px_80"
+                android:layout_marginEnd="@dimen/qb_px_80"
+                android:layout_marginTop="@dimen/qb_px_50"
+                android:text="您需要购买后才能解锁当前题库哦"
+                android:textColor="#585858"
+                android:textSize="@dimen/sp_14" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qb_px_30"
+                android:layout_marginTop="@dimen/qb_px_60"
+                android:layout_marginEnd="@dimen/qb_px_30"
+                android:layout_marginBottom="@dimen/qb_px_44">
+
+                <com.sjc.baseAndroid.weight.MediumTextView
+                    android:id="@+id/text_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_grey_line_round"
+                    android:gravity="center"
+                    android:padding="@dimen/qb_px_26"
+                    android:text="取消"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="@dimen/qb_px_30"
+                    android:layout_height="0dp" />
+
+                <com.sjc.baseAndroid.weight.MediumTextView
+                    android:id="@+id/text_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gradient_blue_course_watch"
+                    android:gravity="center"
+                    android:padding="@dimen/qb_px_26"
+                    android:text="去购买"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
