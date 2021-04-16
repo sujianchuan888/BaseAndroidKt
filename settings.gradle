@@ -1,0 +1,3 @@
+include ':baseAndroidKt'
+include ':app'
+rootProject.name = "MyApplication"
