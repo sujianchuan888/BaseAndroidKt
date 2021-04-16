@@ -20,7 +20,8 @@ allprojects {
 2.  
 项目module中导入远程依赖
 	dependencies {
-	        implementation 'com.github.sujianchuan888:BaseAndroidKt:1.0'
+	        //implementation 'com.github.sujianchuan888:BaseAndroidKt:1.0'
+	        
 	}
 3.  项目中使用
 
